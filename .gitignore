@@ -1,0 +1,7 @@
+/venv
+.idea/
+example_search_html_results.html
+.env
+__pycache__/
+chromedriver
+.vscode/
