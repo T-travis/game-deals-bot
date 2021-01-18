@@ -11,11 +11,11 @@ Search for a game's sale information using a game-url from the game search resul
 
 ### Example Results
 **Game search results:** `$search red dead redemption`
-![](https://github.com/T-travis/game-deals-bot/blob/master/readme-images/game-search-results.png)
+<img src="readme-images/game-search-results.png">
 
 
 **Game sale results:** `$game /game/reddeadredemptioniiforpc/info/`
-![](https://github.com/T-travis/game-deals-bot/blob/master/readme-images/game-sale-results.png)
+<img src="readme-images/game-sale-results.png">
 
 ### Resources
 - https://discordpy.readthedocs.io/en/latest/#
