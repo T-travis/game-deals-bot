@@ -12,7 +12,7 @@ Search for a game's sale information using a game-url from the game search resul
 ### Example Results
 **Game search results:** `$search red dead redemption`
 <img src="readme-images/game-search-results.png">
-
+<br/>
 
 **Game sale results:** `$game /game/reddeadredemptioniiforpc/info/`
 <img src="readme-images/game-sale-results.png">
