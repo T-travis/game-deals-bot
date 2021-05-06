@@ -1,4 +1,5 @@
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
@@ -8,6 +9,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
+
 
 from bs4 import BeautifulSoup, Tag, ResultSet
 from typing import List, Any
@@ -28,9 +30,9 @@ class GameScraper:
 
     def __init__(self):
         # setup chrome driver
-        chrome_options = Options()
-        chrome_options.add_argument('--headless')
-        self.driver = webdriver.Chrome(executable_path='./chromedriver', options=chrome_options)
+        options = webdriver.ChromeOptions()
+        options.add_argument('--headless')
+        self.driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
         # get URL from env and navigate to link
         env_path = Path('.') / '.env'
         load_dotenv(dotenv_path=env_path)
